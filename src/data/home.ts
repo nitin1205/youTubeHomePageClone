@@ -1,0 +1,23 @@
+export const categories = [
+    "All",
+    "Podcasts",
+    "JavaScript",
+    "TypeScript",
+    "programming",
+    "100x-devs",
+    "React",
+    "Vertasium",
+    "Live",
+    "Information",
+    "Frontend Web Development",
+    "Backend Web Development",
+    "Computer Programming",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Cars",
+    "Coding",
+    "Gate",
+    "Recently uploaded",
+    "watched",
+    "New to you"
+]

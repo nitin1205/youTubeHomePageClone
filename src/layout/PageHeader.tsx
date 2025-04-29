@@ -7,7 +7,8 @@ import { Button } from '../components/Button';
 export function PageHeader() {
     const [showFullWidthSearch, setShowFullWidthSearch] = useState(false);
 
- return <div className="flex gap-10 lg:gap-20 justify-between pt-2 mb-6 mx-4">
+ return (
+ <div className="flex gap-10 lg:gap-20 justify-between pt-2 mb-6 mx-4">
     <div className={`gap-4 items-center shrink-0 
         ${showFullWidthSearch? 'hidden' : 'flex'}`}>
         <Button variant='ghost' size='icon'>
@@ -63,5 +64,6 @@ export function PageHeader() {
         </Button>
         
     </div>
- </div>   
+ </div>
+)
 }
