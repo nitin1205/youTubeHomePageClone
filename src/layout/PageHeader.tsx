@@ -15,7 +15,7 @@ export function PageHeader() {
             <Menu/>
         </Button>
         <a href='/'>
-         <img src={logo} className='h-6' />
+         <img src={logo} className='h-7' />
         </a>
         
     </div>

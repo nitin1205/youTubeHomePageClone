@@ -1,8 +1,9 @@
 import './App.css'
 import { CategoryPills } from './components/CategoryPills'
 import { PageHeader } from './layout/PageHeader'
-import { categories } from './data/home'
+import { categories, videos } from './data/home'
 import { useState } from 'react'
+import { VideoGridItem } from './components/VideoGridItem'
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
   return (
@@ -15,12 +16,21 @@ function App() {
           <div>Sidebar</div>
 
           {/* column-2 */}
+
+          {/* upper suggestions */}
           <div className='overflow-x-hidden px-8 pb-4'>
             <div className='sticky top-0 bg-white z-10 pb-4'>
               <CategoryPills  categories={categories}
               selectedCategory={selectedCategory}
               onSelect={setSelectedCategory}
               />
+            </div>
+
+            {/* video cards  */}
+            <div className='grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]'>
+              {videos.map(video => (
+                <VideoGridItem key={video.id} {...video}/>
+              ))}
             </div>
           </div>
 

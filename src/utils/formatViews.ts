@@ -1,0 +1,1 @@
+export const VIEWS_FORMATTER = new Intl.NumberFormat(undefined, {notation: 'compact'})
