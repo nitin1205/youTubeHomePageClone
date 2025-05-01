@@ -4,6 +4,8 @@ import { PageHeader } from './layout/PageHeader'
 import { categories, videos } from './data/home'
 import { useState } from 'react'
 import { VideoGridItem } from './components/VideoGridItem'
+import { Sidebar } from './components/Sidebar'
+
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
   return (
@@ -13,7 +15,7 @@ function App() {
       grow overflow-auto'>
 
           {/* column-1 */}
-          <div>Sidebar</div>
+          <Sidebar />
 
           {/* column-2 */}
 
